@@ -1,6 +1,6 @@
 pandas
-scikit-learn
 matplotlib
 seaborn
-tk
+scikit-learn
 joblib
+tk
