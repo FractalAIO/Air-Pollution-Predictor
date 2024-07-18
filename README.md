@@ -1,24 +1,42 @@
-# Air Pollution Predictor
+# Air Pollution Analysis and Prediction
 
-This project predicts air pollution levels based on various AQI values using a trained machine learning model. It includes a GUI for easy interaction.
+## Project Overview
 
-## Features
+The "AirPollution" project aims to predict air pollution levels based on various AQI (Air Quality Index) values using a trained machine learning model. This project includes a graphical user interface (GUI) for easy interaction and visualization of air pollution data.
 
-- Predict PM2.5 AQI Value for a specified country.
-- Visualize average PM2.5 AQI Value by country.
-- Plot AQI distribution.
-- Display correlation heatmap of AQI values.
+## Project Structure
+AirPollution/
+│
+├── PROJECT/
+│ ├── global air pollution dataset.csv
+│ ├── model_pipeline.joblib
+│
+├── src/
+│ ├── init.py
+│ ├── data_processing.py
+│ ├── model.py
+│ └── train_model.py
+│
+├── main.py
+├── requirements.txt
+├── README.md
+
 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/air-pollution-predictor.git
-   cd air-pollution-predictor
-pip install -r requirements.txt
+      git clone https://github.com/yourusername/AirPollution.git
+      cd AirPollution
+   
+2. Install the dependencies:
+      pip install -r requirements.txt
 
-## Train Model
-python src/train_model.py
+## Training the Model
+3. Ensure the dataset (global air pollution dataset.csv) is placed in the AirPollution/PROJECT directory.
+   Run the training script to train the model and save it as model_pipeline.joblib
+      python src/train_model.py
+## Running the GUI 
+4. Run the main script to launch the GUI
+      python main.py
 
-## Run GUI 
-python main.py
+
